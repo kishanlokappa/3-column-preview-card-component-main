@@ -1,0 +1,116 @@
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding: 1.5em;
+  line-height: 1.7;
+}
+
+/*
+    Typography
+*/
+
+h2 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+}
+
+.one {
+  background: hsl(31, 77%, 52%);
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.two {
+  background: hsl(184, 100%, 22%);
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.three {
+  background: hsl(179, 100%, 13%);
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+/*
+    Layout
+*/
+
+.one,
+.two,
+.three {
+  padding: 3em;
+}
+
+h2 + p {
+  margin-bottom: 5.25em;
+}
+
+.button {
+  cursor: pointer;
+  background: hsla(0, 0%, 100%, 0.75);
+  padding: 1em 2.5em;
+  border-radius: 1.5em;
+  border: none;
+}
+
+.button-orange {
+  color: hsl(31, 77%, 52%);
+}
+
+.button-orange:hover,
+.button-orange:focus {
+  color: hsla(0, 0%, 100%, 0.75);
+  border: 1.5px solid hsla(0, 0%, 100%, 0.75);
+  background: hsl(31, 77%, 52%);
+}
+
+.button-darkcyan {
+  color: hsl(184, 100%, 22%);
+}
+
+.button-darkcyan:hover,
+.button-darkcyan:focus {
+  color: hsla(0, 0%, 100%, 0.75);
+  border: 1.5px solid hsla(0, 0%, 100%, 0.75);
+  background: hsl(184, 100%, 22%);
+}
+
+.button-very-darkcyan {
+  color: hsl(179, 100%, 13%);
+}
+
+.button-very-darkcyan:hover,
+.button-very-darkcyan:focus {
+  color: hsla(0, 0%, 100%, 0.75);
+  border: 1.5px solid hsla(0, 0%, 100%, 0.75);
+  background: hsl(179, 100%, 13%);
+}
+
+/*
+    Media query
+*/
+
+@media (min-width: 475px) {
+  body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .one,
+  .two,
+  .three {
+    height: 50%;
+    width: 25%;
+  }
+}
